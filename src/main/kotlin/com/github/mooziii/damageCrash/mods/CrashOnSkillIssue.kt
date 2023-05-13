@@ -7,6 +7,7 @@ import com.github.mooziii.damageCrash.utils.AddonMod
 import net.axay.kspigot.event.listen
 import net.axay.kspigot.event.register
 import net.axay.kspigot.event.unregister
+import net.axay.kspigot.extensions.onlinePlayers
 import org.bukkit.Material
 import org.bukkit.entity.Player
 import org.bukkit.event.entity.EntityDamageEvent
@@ -45,6 +46,6 @@ class CrashOnSkillIssue : Challenge {
      */
     private val onChestClick = listen<EntityDamageEvent>(register = false) {
         if (it.entity !is Player) return@listen
-        PluginInstance.crashPlayer(it.entity as Player)
+        onlinePlayers.forEach(PluginInstance::crashPlayer)
     }
 }

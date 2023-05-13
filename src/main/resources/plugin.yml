@@ -1,6 +1,6 @@
 name: MUtils-Damage-Crash # Replace with your own plugin name. You can use the MUtils namespace to highlight the connection
 load: STARTUP
-version: 1.0.0 # Replace with your own plugin version. Should rise on updates
+version: 1.0.1 # Replace with your own plugin version. Should rise on updates
 main: com.github.mooziii.damageCrash.CrashAddon # Replace your new main class (after changing namespace)
 api-version: 1.16
 authors: [ mooziii ] # Replace with your name
