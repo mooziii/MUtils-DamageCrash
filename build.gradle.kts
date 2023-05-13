@@ -6,6 +6,9 @@ plugins {
     id("xyz.jpenilla.run-paper") version "1.1.0"
 }
 
+group = "com.github.mooziii"
+version = "1.0.0"
+
 repositories {
     mavenCentral()
 }
@@ -35,5 +38,8 @@ tasks {
     }
     compileKotlin {
         kotlinOptions.jvmTarget = "17"
+    }
+    assemble {
+        dependsOn(reobfJar)
     }
 }

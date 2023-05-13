@@ -1,5 +1,5 @@
 
-rootProject.name = "MChallenge-Addon"
+rootProject.name = "MUtils-Damage-Crash"
 
 pluginManagement {
     repositories {
